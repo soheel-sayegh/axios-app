@@ -3,12 +3,13 @@ body{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed
+  background-attachment: fixed;
+  height: 100%;
 }
 
 .card{
 height: 200px;
-width: 180px;
+width: 170px;
 margin: 8px
 
 }
@@ -55,3 +56,16 @@ color: white
 color: white;
   border: 1px solid white
 }
+.form-control{
+  width: auto;
+  margin-right: 10px
+}
+.page-item h3{
+  font-size: 17px;
+ border: 1px solid white;
+ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,227,1) 62%, rgb(18, 139, 163) 100%);
+
+ margin: 10px 5px
+
+}
+

@@ -15,6 +15,7 @@ function App() {
 
   const sendRequest = e => {
     e.preventDefault();
+    setPageNum(1);
     axios
       .get("https://api.unsplash.com/search/photos", {
         params: {
@@ -66,6 +67,7 @@ function App() {
       .then(response => {
         setRef(false)
         setPictures([...response.data.results]);
+        
       })
       .catch(error => {
         console.log(error.message);
@@ -92,7 +94,12 @@ function App() {
             <button className="btn btn-outline-primary" onClick={pageChange} name='dec'>
               <span aria-hidden="true">&laquo;</span>
             </button>
-          </li> 
+          </li>
+          <li className="page-item" >
+            <h3 className='badge badge-primary text-wrap text-uppercase'>
+              '{term}' pictures page {pageNum}
+            </h3>
+            </li> 
           
 
           <li className="page-item" >
