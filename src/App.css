@@ -1,0 +1,57 @@
+body{
+  background-image: url(../public/145587.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed
+}
+
+.card{
+height: 200px;
+width: 180px;
+margin: 8px
+
+}
+img{
+  height:100%;
+}
+.loding{
+  margin-left: auto 50%
+}
+.lod{
+  color: antiquewhite
+}
+
+.navbar-brand{
+  padding: 10px;
+  font-weight: bold;
+  font-size: 35px;
+  border: 2px solid white;
+ margin-bottom: 6px;
+ margin-top: 6px;
+ text-align: center;
+ margin-right: 0;
+}
+.page-item .btn{
+  width: 150px;
+  margin-top: 10px;
+  font-size: 20px
+}
+.card :hover{
+  transform: scale(1.1);
+  border: 3px solid rgb(15, 15, 207)
+}
+.navbar{
+  border: 1px solid white
+
+}
+.navbar-light{
+  margin-top: 10px;
+  
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,227,1) 62%, rgba(0,212,255,1) 100%);
+color: white
+}
+.btn-outline-primary{
+color: white;
+  border: 1px solid white
+}
