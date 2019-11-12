@@ -61,11 +61,10 @@ color: white;
   margin-right: 10px
 }
 .page-item h3{
-  font-size: 17px;
+  font-size: 15px;
  border: 1px solid white;
  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,227,1) 62%, rgb(18, 139, 163) 100%);
-
- margin: 10px 5px
+ margin: 10px 4px
 
 }
 
