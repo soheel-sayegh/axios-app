@@ -4,7 +4,10 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
+  height:auto;
+  max-height:150%;
+   
+  
 }
 
 .card{
@@ -26,7 +29,7 @@ img{
 .navbar-brand{
   padding: 10px;
   font-weight: bold;
-  font-size: 35px;
+font-size: 27px;
   border: 2px solid white;
  margin-bottom: 6px;
  margin-top: 6px;
@@ -34,23 +37,25 @@ img{
  margin-right: 0;
 }
 .page-item .btn{
-  width: 150px;
+  width: 100px;
   margin-top: 10px;
-  font-size: 20px
+  font-size: 25px;
+ 
 }
 .card :hover{
   transform: scale(1.1);
   border: 3px solid rgb(15, 15, 207)
 }
 .navbar{
-  border: 1px solid white
+  border: 1px solid white;
 
 }
 .navbar-light{
   margin-top: 10px;
   
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,227,1) 62%, rgba(0,212,255,1) 100%);
-color: white
+color: white;
+
 }
 .btn-outline-primary{
 color: white;
@@ -65,6 +70,10 @@ color: white;
  border: 1px solid white;
  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,227,1) 62%, rgb(18, 139, 163) 100%);
  margin: 10px 4px
+
+}
+.container{
+  height: 100%;
 
 }
 
