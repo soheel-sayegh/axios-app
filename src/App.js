@@ -75,6 +75,7 @@ function App() {
   });
   return (
     <div className="container">
+      <div className=' sticky-top '>
       <nav className="navbar navbar-light">
       <a className="navbar-brand col-lg-5 col-sm-12 ">Search for pictures</a>
       <form onSubmit={sendRequest} className="form-inline">
@@ -88,7 +89,7 @@ function App() {
 
       
       </nav>
-      <nav aria-label="Page navigation example">
+      <nav aria-label="Page navigation example ">
         <ul className="pagination justify-content-between">
           <li className="page-item" >
             <button className="btn btn-outline-primary" onClick={pageChange} name='dec'>
@@ -109,8 +110,9 @@ function App() {
           </li>
         </ul>
     </nav>
+    </div>
       
-      <div className="d-flex flex-wrap justify-content-center" >
+      <div className="d-flex flex-wrap justify-content-center " >
       {pictures.length
       ? pictures.map(pic => (  
          <a href={pic.urls.full} target='blank' key={pic.id} > 
