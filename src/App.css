@@ -4,9 +4,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height:auto;
-  max-height:150%;
-   
+  top: 0;
+  bottom: 0;
+  min-height: 100vh; 
   
 }
 
