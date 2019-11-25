@@ -21,7 +21,7 @@ function App() {
         params: {
           query: term,
           page: 1,
-          per_page: 20,
+          per_page: 30,
          
           
         },
@@ -55,7 +55,7 @@ function App() {
         params: {
           query: term,
           page: pageNum,
-          per_page: 20,
+          per_page: 30,
           
           
         },
@@ -74,10 +74,11 @@ function App() {
       });
   });
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className=' sticky-top '>
+        
       <nav className="navbar navbar-light">
-      <a className="navbar-brand col-lg-5 col-sm-12 ">Search for pictures</a>
+      <a className="navbar-brand col-lg-5 col-sm-12">Search for pictures</a>
       <form onSubmit={sendRequest} className="form-inline">
         <input
           type="text"
@@ -86,30 +87,29 @@ function App() {
         />
         <button type="submit" value="Search" className="btn btn-outline-primary my-2 my-sm-0" >Search</button>
       </form>
-
-      
-      </nav>
-      <nav aria-label="Page navigation example ">
-        <ul className="pagination justify-content-between">
-          <li className="page-item" >
-            <button className="btn btn-outline-primary" onClick={pageChange} name='dec'>
-              <span aria-hidden="true">&laquo;</span>
-            </button>
-          </li>
-          <li className="page-item" >
-            <h3 className='badge badge-primary text-wrap text-uppercase'>
-              '{term}' pictures page {pageNum}
-            </h3>
-            </li> 
-          
-
-          <li className="page-item" >
-            <button className="btn btn-outline-primary"  onClick={pageChange} name='inc'>
-              <span aria-hidden="true">&raquo;</span>
-            </button>
-          </li>
-        </ul>
     </nav>
+    <nav aria-label="Page navigation example " className='navigation'>
+          <ul className="pagination justify-content-between">
+            <li className="page-item" >
+              <button className="btn btn-outline-primary" onClick={pageChange} name='dec'>
+                <span aria-hidden="true">&laquo;</span>
+              </button>
+            </li>
+            <li className="page-item" >
+              <h3 className='badge badge-primary text-wrap text-uppercase'>
+                '{term}' pictures page {pageNum}
+              </h3>
+              </li> 
+            
+
+            <li className="page-item" >
+              <button className="btn btn-outline-primary"  onClick={pageChange} name='inc'>
+                <span aria-hidden="true">&raquo;</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+     
     </div>
       
       <div className="d-flex flex-wrap justify-content-center " >
@@ -118,6 +118,10 @@ function App() {
          <a href={pic.urls.full} target='blank' key={pic.id} > 
         <div className="card"  > 
           <img  src={pic.urls.thumb} alt={pic.id} className="card-img-top"/>
+          <div className="overlay">
+            <p className='like'>{pic.likes}: <i className="fas fa-thumbs-up"></i></p>
+            <p className="text">{pic.alt_description}</p>
+          </div>
         </div> 
         </a>
        
