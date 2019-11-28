@@ -133,6 +133,10 @@ body{
   font-weight: bold
 }
 @media (max-width: 576px) { 
+body{
+  background-image: url(../public/uNh0ygB.jpg);
+
+}
   .page-item .btn{
     width: 70px;
     font-size: 25px;
@@ -161,3 +165,42 @@ body{
   }
   
  }
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+  .card {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 8px
+  }
+  .navbar-light{
+    height: 120px;
+    
+  }
+  .navigation{
+    height: 50px;
+  }
+  .page-item .btn{
+    width: 70px;
+    font-size: 20px;
+   height: 45px;
+   margin-top: 0;
+  
+  }
+  .page-item h3{
+    font-size: 110%;
+    height: 50%;
+    border: 1px solid white;
+    margin: 10px 4px;
+   
+  }
+  .navbar-brand{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 140%;
+    border: 2px solid white;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    margin-right: 0;
+  }
+}
